@@ -42,11 +42,7 @@ table {
 	border-spacing: 0;
 }
 
-h1 {
-    color: #A734FF;
-  }
-  
-  .container {
+.container {
     display: grid;
     min-height: 600px;
     background: url("https://images.unsplash.com/photo-1492541737557-dfd592c6e42d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80");
@@ -56,43 +52,38 @@ h1 {
     grid-template-rows: auto auto auto;
   }
   
-  .tile-1 {
-    background: red;
+  .tile * {
+    color: #fff;
   }
   
-  .tile-2 {
-    background: orange;
-  }
-  
-  .tile-3 {
-    background: yellow;
+  .tile-1, .tile-2, .tile-3, .tile-4 {
+    background: #063455;
+    border-right: 1px solid #006aa5;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
   }
   
   .tile-4 {
-    background: green;
+    border: none;
   }
   
   .tile-5 {
-    background: blue;
+    background: #0369A4;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4;
   }
   
-  .tile-6 {
-    background: purple;
-  }
-  
   .tile-7 {
-    background: pink;
+    background: rgba(6, 52, 85, 0.7);
   }
   
   .tile-8 {
-    background: grey;
-  }
-  
-  .tile-9 {
-    background: orangered;
+    background: rgba(1, 253, 255, 0.8);
   }
   
